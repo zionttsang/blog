@@ -25,8 +25,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          {children}
+          <main className="max-w-7xl mx-auto p-10 space-y-5">
+            <Navbar />
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>
